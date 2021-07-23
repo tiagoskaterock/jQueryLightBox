@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Light Box</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  img{
+  	width: 150px;
+  }
+  .bg-box {
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	background-color: rgba(0,0,0,0.7);
+  	display: none;
+  }
+  .div-box {
+  	position: fixed;
+  	top: 50px;
+  	left: 50%;
+  	width: 500px;
+  	background-color: white;
+  	margin-left: -270px;
+  	padding: 20px;
+  	text-align: center;  
+  	border-radius: 15px;	
+  	display: none;
+  }
+  .div-box img {
+  	border: 0;
+  	width: 100%;
+  	border-radius: 15px;
+  }
+  .div-box .btn {
+  	margin-top: 10px;
+  }
+  </style>
+</head>
+<body>
+
+	<div class="jumbotron text-center">
+
+		<h1>LightBox</h1>
+
+		<a href="javascript:void(0)" class="galeria">
+			<img src="https://media.istockphoto.com/photos/surprised-beautiful-black-woman-picture-id1176489653?k=6&m=1176489653&s=612x612&w=0&h=wBm9ef6JL7hSHG0sSE4mFRdH31Y0Kbv2DpE86BovxNg=" alt="Mulher sorrindo">
+		</a>
+
+		<a href="javascript:void(0)" class="galeria">			
+			<img src="https://media.istockphoto.com/photos/beautiful-girl-with-curly-hairstyle-picture-id1271527412?k=6&m=1271527412&s=612x612&w=0&h=ofzS19XyJnwMwUPF4mb_Xe30Vs-KII0ti6iNfvuin-s=" alt="Mulher olhando para a câmera">
+		</a>
+
+		<a href="javascript:void(0)" class="galeria">
+			<img src="https://ak.picdn.net/shutterstock/videos/6619619/thumb/12.jpg" alt="Mulher sorrindo">
+		</a>
+
+		<a href="javascript:void(0)" class="galeria">
+			<img src="https://thumbs.dreamstime.com/b/bela-mulher-africana-rindo-vestido-de-negra-sem-gargalhadas-com-ombros-nus-retrato-da-sorridente-garota-desfruta-do-tratamento-159264781.jpg" alt="Mulher sorrindo">
+		</a>
+
+		<a href="javascript:void(0)" class="galeria">
+			<img src="https://envato-shoebox-0.imgix.net/95be/20c0-07df-4985-9eb6-77c03e136a61/_8177474.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=700&s=7dd04343193d27adea2f93fd7f9760f5" alt="Mulher sorrindo">
+		</a>
+
+		<a href="javascript:void(0)" class="galeria">
+			<img src="https://thumbs.dreamstime.com/b/glamour-african-american-beauty-model-long-black-hair-isolated-studio-portrait-dark-smooth-skin-natural-makeup-glamour-185204152.jpg" alt="Mulher sorrindo">
+		</a>
+
+		<a href="javascript:void(0)" class="galeria">
+			<img src="https://media.istockphoto.com/photos/smooth-skin-puts-a-smile-on-her-face-picture-id500922449?k=6&m=500922449&s=612x612&w=0&h=o_AaaPV4QDb-6_Vg5Ro9-foDCk7wHytPTkdgVT_aADo=" alt="Mulher sorrindo">
+		</a>
+
+		<a href="javascript:void(0)" class="galeria">
+			<img src="https://data.whicdn.com/images/251195534/original.jpg" alt="Mulher sorrindo">
+		</a>
+
+		<a href="javascript:void(0)" class="galeria">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj8u0wyWRSvzZY49IXeEYeT5Ii4K4UXjVuPIJyMVCHkx_Q0HvjmFmTo3a-NKBh0gn5HUE&usqp=CAU" alt="Mulher sorrindo">
+		</a>
+
+		<a href="javascript:void(0)" class="galeria">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN90J0YEVlFVracp7PWLwYZq9FFGC4lcIv5baEdVUn-O06rWWeFq3NLor_BCVDrPqyEGg&usqp=CAU" alt="Mulher sorrindo">
+		</a>
+
+		<a href="javascript:void(0)" class="galeria">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1i848rY8UjEqfkqUWA2hgNkaZ7Nh8hMglJWGLG5lKEAwbtOJWyqvKaaSDNtb6HelNbj0&usqp=CAU" alt="Mulher sorrindo">
+		</a>
+
+		<a href="javascript:void(0)" class="galeria">
+			<img src="https://i.pinimg.com/736x/ef/d9/a9/efd9a97f65d827a97d3f726c296ba7a5.jpg" alt="Mulher sorrindo">
+		</a>
+
+		<a href="javascript:void(0)" class="galeria">
+			<img src="https://i.pinimg.com/564x/e4/00/79/e4007931fbac40c6359fb7c3aaa1688f.jpg" alt="Mulher sorrindo">
+		</a>
+
+		<a href="javascript:void(0)" class="galeria">
+			<img src="https://carolinesenablog.files.wordpress.com/2015/11/95d4ba9eb2a96b5be81464bc090ded41.jpg" alt="Mulher sorrindo">
+		</a>
+
+		<a href="javascript:void(0)" class="galeria">
+			<img src="https://i.pinimg.com/originals/10/b8/4b/10b84b2568c0e6e2ddd98825b636421d.jpg" alt="Mulher sorrindo">
+		</a>
+
+		<a href="javascript:void(0)" class="galeria">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC1injh7FhGAchs-9pAlExBZeYgv5cguCtZ4uQBvL2606_ZA5bxz38D_EOqS3U4ZaVo7A&usqp=CAU" alt="Mulher sorrindo">
+		</a>
+	</div>
+
+	<div class="bg-box"></div>
+
+	<div class="div-box">
+		<img src="https://media.istockphoto.com/photos/surprised-beautiful-black-woman-picture-id1176489653?k=6&m=1176489653&s=612x612&w=0&h=wBm9ef6JL7hSHG0sSE4mFRdH31Y0Kbv2DpE86BovxNg=" alt="Mulher Sorrindo"><br>
+		<button class="btn btn-primary fechar">Fechar</button>
+	</div>
+
+	<script>
+		$(function(){		
+
+			// clica no botão ou fora fecha modal
+			$('.bg-box, .fechar').bind('click', function(){
+				$(this).fadeOut('slow');
+				$('.div-box').fadeOut('slow');			
+				$('.bg-box').fadeOut('slow');	
+			});
+
+			// clica na galeria mostra modal
+			$('.galeria').bind('click', function(){
+				var img = $(this).find('img').attr('src');
+				var imgHeight = $(this).find('img').height;
+				$('.div-box img').attr('src', img);
+				$('.bg-box').fadeIn('slow');
+				$('.div-box').fadeIn('slow');	
+				$('.fechar').fadeIn('slow');	
+			});
+
+		});
+	</script>
+</body>
+</html>
